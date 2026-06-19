@@ -1,0 +1,134 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#182492;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#4e1eff,#1b0b5c);
+padding:20px 8%;
+border-bottom-left-radius:80px;
+border-bottom-right-radius:80px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h2{
+font-size:32px;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+}
+
+.sign-btn{
+background:#ff6b35;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+color:white;
+cursor:pointer;
+}
+
+.contact-header{
+text-align:center;
+padding:80px 0;
+}
+
+.contact-header h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.contact-section{
+padding:80px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.contact-info{
+background:#1a1245;
+padding:30px;
+border-radius:20px;
+}
+
+.contact-info h2{
+margin-bottom:20px;
+}
+
+.info-box{
+margin-top:25px;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+.contact-form button{
+background:#ff6b35;
+color:white;
+border:none;
+padding:15px;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+footer{
+background:#3c168d;
+text-align:center;
+padding:35px;
+margin-top:60px;
+border-top-left-radius:60px;
+border-top-right-radius:60px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.contact-section{
+grid-template-columns:1fr;
+}
+
+.contact-header h1{
+font-size:35px;
+}
+
+}
